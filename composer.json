@@ -5,7 +5,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "auth0/auth0-php": "^7.2.0",
+        "auth0/auth0-php": "^7.3.0",
         "illuminate/support": "5.* | ^6.0 | ^7.0 | ^8.0",
         "illuminate/contracts": "5.* | ^6.0 | ^7.0 | ^8.0"
     },
@@ -16,6 +16,12 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
         "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:TMCApplications/auth0-php.git"
+        }
+    ],
     "scripts": {
         "test": "SHELL_INTERACTIVE=1 \"vendor/bin/phpunit\" --coverage-text ",
         "phpcs": "\"vendor/bin/phpcs\"",
